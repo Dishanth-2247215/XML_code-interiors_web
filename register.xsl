@@ -32,18 +32,22 @@
                         <th>Mail_id</th>
                         <th>Username</th>
                         <th>Password</th>
+                        <th>Purchase</th>
                     </tr>
                     <xsl:for-each select="customer">
                         <xsl:for-each select="Person">
                             <xsl:sort select="name"/>
+                            <xsl:if test="cart &gt; 10">
                         <tr>
                             <td><xsl:value-of select="name"/> </td>
                             <td><xsl:value-of select="gender"/> </td>
                             <td><xsl:value-of select="Phone_num"/> </td>
                             <td><xsl:value-of select="mail_id"/> </td>
                             <td><xsl:value-of select="username"/> </td>
-                            <td><xsl:value-of select="cpassword"/> </td> 
+                            <td><xsl:value-of select="cpassword"/> </td>
+                            <td><xsl:value-of select="cart"/> </td>
                         </tr>
+                        </xsl:if>
                         </xsl:for-each>
                     </xsl:for-each>
                 </table>
