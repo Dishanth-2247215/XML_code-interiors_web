@@ -17,6 +17,11 @@
             th{
                 background:white;
             }
+            table, th, td {
+            border: 2px solid black;
+            border-collapse: collapse;
+            padding:20px;
+            }
         </style>
         
     </head>
