@@ -5,7 +5,7 @@
         <Person>
             <name>Amith</name>
             <gender>Male</gender>
-            <Phone_num>9876</Phone_num>
+            <Phone_num>9876543210</Phone_num>
             <mail_id>amith@gamil.com</mail_id>
             <username>amithprasad</username>
             <npassword>Amithp/123</npassword>
@@ -15,7 +15,7 @@
         <Person>
             <name>Maya</name>
             <gender>Female</gender>
-            <Phone_num>9876</Phone_num>
+            <Phone_num>9876543210</Phone_num>
             <mail_id>maya@gamil.com</mail_id>
             <username>mayarao</username>
             <npassword>Maya-123</npassword>
