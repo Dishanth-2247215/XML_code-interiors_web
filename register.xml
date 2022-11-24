@@ -5,20 +5,22 @@
         <Person>
             <name>Amith</name>
             <gender>Male</gender>
-            <Phone_num>9876543210</Phone_num>
+            <Phone_num>9876</Phone_num>
             <mail_id>amith@gamil.com</mail_id>
             <username>amithprasad</username>
             <npassword>Amithp/123</npassword>
             <cpassword>Amithp/123</cpassword>
+            <cart>14</cart>
         </Person>
         <Person>
             <name>Maya</name>
             <gender>Female</gender>
-            <Phone_num>9876543210</Phone_num>
+            <Phone_num>9876</Phone_num>
             <mail_id>maya@gamil.com</mail_id>
             <username>mayarao</username>
             <npassword>Maya-123</npassword>
             <cpassword>Maya-123</cpassword>
+            <cart>15</cart>
         </Person>
         <Person>
             <name>Sheetal</name>
@@ -28,6 +30,7 @@
             <username>sheetalkumar</username>
             <npassword>Sheetal!789</npassword>
             <cpassword>Sheetal!789</cpassword>
+            <cart>6</cart>
         </Person>
         <Person>
             <name>Mahesh</name>
@@ -37,17 +40,18 @@
             <username>maheshraj</username>
             <npassword>Mahesh@456</npassword>
             <cpassword>Mahesh@456</cpassword>
+            <cart>8</cart>
         </Person>
         <Person>
             <name>Preetham</name>
             <gender>Male</gender>
             <Phone_num>9876543210</Phone_num>
-            <mail_id>@gamil.com</mail_id>
+            <mail_id>preetham@gamil.com</mail_id>
             <username>preethamkumar</username>
             <npassword>Preetham*123</npassword>
             <cpassword>Preetham*123</cpassword>
-        </Person>
-       
+            <cart>12</cart>
+        </Person>   
     </customer>
     <admin>
         <main>
@@ -55,7 +59,7 @@
             <Phone_num>9876543210</Phone_num>
             <mail_id>dishanth@gamil.com</mail_id>
             <adminname>dishanthp</adminname>
-            <apassword>dishu@123</apassword>
+            <apassword>dishu@12</apassword>
         </main>
     </admin>
 </root>
