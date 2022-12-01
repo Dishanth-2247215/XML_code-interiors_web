@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="domparser.css">
+</head>
+<body>
+    <h1 style="padding: 20px; font-family: sans-serif;">My Info : </h1>
+    <div class="tab">
+        <label><b>Name : </b></label>
+        <label id="name"></label><br><br>
+
+        <label><b>Phone number : </b></label>
+        <label id="phone"></label><br><br>
+
+        <label><b>Mail ID : </b></label>
+        <label id="mail"></label><br><br>
+
+        <label><b>User name : </b></label>
+        <label id="usern"></label><br><br>
+
+        <label><b>To view the present password :</b></label>
+        <button onclick="showHide()" style="font-size: 15px;"><b>Click here!</b></button> <br><br>
+        <label id="pass" style="padding-left:100px; color:#3b49e3"></label><br>
+
+        <b>Change password : </b>
+        <input type="text" id="newpass"><br><br>
+
+        <b>To view the changed password :</b>
+        <button onclick="showNew()" style="font-size: 15px;"><b>Click here!</b></button> <br><br>
+        <label id="passNew" style="padding-left:100px; color:#3b49e3"></label><br> <br><br>
+
+        <a href=""><button><b>Save Changes</b></button></a>
+        <a href=""><button><b>Back</b></button></a>
+
+    </div>
+    <script>
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function () {
+            if (this.readyState == 4 && this.status == 200) {
+                myFunction(this);
+            }
+        };
+        xhttp.open("GET", "domparser.xml", true);
+        xhttp.send();
+
+        function myFunction(xml) {
+            var xmlDoc = xml.responseXML;
+            
+            x = xmlDoc.getElementsByTagName("name")[0].childNodes[0];
+            document.getElementById("name").innerHTML = x.nodeValue;
+            
+            x = xmlDoc.getElementsByTagName("phn")[0].childNodes[0];
+            document.getElementById("phone").innerHTML = x.nodeValue;
+            
+            x = xmlDoc.getElementsByTagName("mail")[0].childNodes[0];
+            document.getElementById("mail").innerHTML = x.nodeValue;
+            
+            x = xmlDoc.getElementsByTagName("usern")[0].childNodes[0];
+            document.getElementById("usern").innerHTML = x.nodeValue;
+            
+            x = xmlDoc.getElementsByTagName("pass")[0].childNodes[0];
+            document.getElementById("pass").innerHTML = x.nodeValue;
+
+            document.getElementById("pass").style.display = "none";
+        }
+        function showHide() {
+            document.getElementById("pass").style.display = "block";
+        }
+
+        function showNew() {
+            document.getElementById("passNew").innerText = document.getElementById('newpass').value;
+        }
+    </script>
+</body>
+</html>
